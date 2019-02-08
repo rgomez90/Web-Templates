@@ -1,0 +1,64 @@
+a {
+    color: inherit;
+}
+
+.content-wrapper {
+    background: rgba(1, 1, 1, 0.8) !important;
+}
+
+.content-header {
+    background: white;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.title-image {
+    width: 300px;
+    margin: 3% auto;
+}
+
+.terminal img {
+    width: 100%;
+}
+
+.terminal {
+    height: 100%;
+    padding: 4% 10%;
+    color: #00ee00;
+    font-family: consolas;
+    word-wrap: break-all;
+    text-align: center;
+}
+.terminal .title {
+    text-align: center;
+    width: 100%;
+    font-size: 6em;
+}
+
+.terminal .cursor {
+    display: inline;
+    animation: blink .75s linear infinite;
+}
+
+.terminal .text {
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    66% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

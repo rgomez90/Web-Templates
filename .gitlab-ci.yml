@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  script:
+    #- mkdir public  #We copy all content from root folder to a .public
+    #- robocopy . .\public /s /xd public ".git" /xf *.yml "*.md" #copy recursively all root content to public
+    - echo 'Deploying site...'
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
